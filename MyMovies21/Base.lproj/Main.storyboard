@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMovies21" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EfE-vH-C3M">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-M6-2uD">
+                                <rect key="frame" x="83" y="0.0" width="730" height="414"/>
+                                <subviews>
+                                    <view verifyAmbiguity="off" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPz-el-8TC">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="414"/>
+                                        <subviews>
+                                            <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b0-9Z-nck">
+                                                <rect key="frame" x="2" y="45" width="238" height="326"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="trailer1.png"/>
+                                                <connections>
+                                                    <segue destination="YoI-st-maV" kind="show" identifier="first" id="eXt-ao-PbH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8b0-9Z-nck" secondAttribute="trailing" id="Lc3-hQ-H45"/>
+                                            <constraint firstItem="8b0-9Z-nck" firstAttribute="top" secondItem="xPz-el-8TC" secondAttribute="top" constant="45" id="p43-3s-2CK"/>
+                                            <constraint firstItem="8b0-9Z-nck" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xPz-el-8TC" secondAttribute="leading" constant="2" id="tWO-Rp-O4u"/>
+                                        </constraints>
+                                    </view>
+                                    <view verifyAmbiguity="off" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayc-6W-rf5">
+                                        <rect key="frame" x="245" y="0.0" width="240" height="414"/>
+                                        <subviews>
+                                            <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbq-5c-ZnV">
+                                                <rect key="frame" x="2" y="45" width="236" height="326"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="trailer2.png"/>
+                                                <connections>
+                                                    <segue destination="YoI-st-maV" kind="show" identifier="second" id="qL8-DI-0eP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Hbq-5c-ZnV" firstAttribute="leading" secondItem="ayc-6W-rf5" secondAttribute="leading" constant="2" id="0GM-uT-bbQ"/>
+                                            <constraint firstItem="Hbq-5c-ZnV" firstAttribute="top" secondItem="ayc-6W-rf5" secondAttribute="top" constant="45" id="Pd0-gH-rKu"/>
+                                            <constraint firstItem="Hbq-5c-ZnV" firstAttribute="centerX" secondItem="ayc-6W-rf5" secondAttribute="centerX" id="neA-7v-2cV"/>
+                                        </constraints>
+                                    </view>
+                                    <view verifyAmbiguity="off" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5Q-tj-Zo1">
+                                        <rect key="frame" x="490" y="0.0" width="240" height="414"/>
+                                        <subviews>
+                                            <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4j6-af-rXR">
+                                                <rect key="frame" x="2" y="45" width="236" height="326"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="trailer3.png">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="YoI-st-maV" kind="show" identifier="third" id="2vp-BP-0kW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="4j6-af-rXR" firstAttribute="top" secondItem="N5Q-tj-Zo1" secondAttribute="top" constant="45" id="0MA-2i-xld"/>
+                                            <constraint firstItem="4j6-af-rXR" firstAttribute="centerX" secondItem="N5Q-tj-Zo1" secondAttribute="centerX" id="8p4-sC-4G1"/>
+                                            <constraint firstItem="4j6-af-rXR" firstAttribute="leading" secondItem="N5Q-tj-Zo1" secondAttribute="leading" constant="2" id="to1-FS-cgW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ayc-6W-rf5" firstAttribute="centerX" secondItem="fdQ-M6-2uD" secondAttribute="centerX" id="e6e-FT-JgF"/>
+                                    <constraint firstItem="ayc-6W-rf5" firstAttribute="leading" secondItem="fdQ-M6-2uD" secondAttribute="leading" constant="245" id="m0P-s9-xYg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GXs-7A-rwT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fdQ-M6-2uD" firstAttribute="leading" secondItem="GXs-7A-rwT" secondAttribute="leading" constant="39" id="j51-Se-eAe"/>
+                            <constraint firstItem="fdQ-M6-2uD" firstAttribute="centerX" secondItem="EfE-vH-C3M" secondAttribute="centerX" id="kSe-Qv-nxF"/>
+                            <constraint firstAttribute="bottom" secondItem="fdQ-M6-2uD" secondAttribute="bottom" id="lgY-FI-IbA"/>
+                            <constraint firstItem="fdQ-M6-2uD" firstAttribute="top" secondItem="GXs-7A-rwT" secondAttribute="top" id="lov-kd-48Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-39"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="uzs-88-CIR">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="YoI-st-maV" customClass="PlayerViewController" customModule="MyMovies21" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pBo-cb-wbg"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eW0-Vm-Ztm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="833"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2vp-BP-0kW"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="trailer1.png" width="214" height="312"/>
+        <image name="trailer2.png" width="214" height="312"/>
+        <image name="trailer3.png" width="214" height="312"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
